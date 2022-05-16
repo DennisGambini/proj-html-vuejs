@@ -1,0 +1,10 @@
+@import './myFlexFramework.scss';
+@import './palette.scss';
+
+// colori
+$primary-text: black;
+// MIXINS
+@mixin container-md {
+    max-width: 75%;
+    margin: 0 auto;
+}
