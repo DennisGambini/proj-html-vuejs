@@ -5,7 +5,7 @@
           <i class="fa-regular fa-clock"></i>
           <span>00 : 00 : 00 : 00</span>
       </div>
-      <button>Get ticket</button>
+      <a href="#">Get ticket</a>
   </section>
 </template>
 
@@ -22,6 +22,9 @@ export default {
     @include flex-row-center-center;
     gap: 20px;
     background-color: $hint-of-red;
+}
+a{
+    @include orange-sm-btn;
 }
 
 </style>
