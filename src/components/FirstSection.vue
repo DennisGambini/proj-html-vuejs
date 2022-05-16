@@ -1,6 +1,14 @@
 <template>
   <section class="first-section">
+
       <div class="cards">
+          <!-- sfondi -->
+        <img :src="sfondi[0].img" alt="sfondo image" class="sfondo sfondo-dx">
+        <img :src="sfondi[2].img" alt="sfondo linea" class="sfondo linea">
+        <forma-strana class="sfondo forma-strana"/>
+        <img :src="sfondi[1].img" alt="sfondo palla" class="sfondo palla">
+
+
           <div class="container">
                 <div class="text">
                     <div class="signature">Artist coaching</div>
@@ -19,6 +27,8 @@
           </div>
           
       </div>
+
+      <!-- quote -->
       <div class="quote">
           <div class="container">
               <div class="sx">
@@ -33,9 +43,13 @@
               </div>
           </div>
       </div>
+
+      <!-- youtube -->
       <div class="embed">
 
       </div>
+
+      <!-- carosello -->
       <div class="carousel">
 
       </div>
@@ -44,8 +58,10 @@
 
 <script>
 import dati from '@/dati.json';
+import FormaStrana from './FormaStrana.vue';
 
 export default {
+  components: { FormaStrana },
     name: 'FirstSection',
     data(){return{
         cards: dati.cards,
@@ -61,6 +77,28 @@ export default {
             },
             {
                 img: require('@/assets/images/artist-box-image-04.png')
+            },
+        ],
+        sfondi:[
+            {
+                name: 'sfondoDx',
+                img: require('../assets/images/artist-shape-01.png')
+            },
+            {
+                name: 'palla',
+                img: require('../assets/images/maxcoach-shape-13.png')
+            },
+            {
+                name: 'linea',
+                img: require('../assets/images/maxcoach-shape-03.png')
+            },
+            {
+                name: 'shape blu',
+                img: require('../assets/images/maxcoach-shape-05.png')
+            },
+            {
+                name: 'shape scura',
+                img: require('../assets/images/maxcoach-shape-12.png')
             },
         ],
         quoteImg: require('@/assets/images/artist-quote-icon.png')
@@ -82,6 +120,7 @@ section{
     padding-top: $section-gap;
     .cards{
         padding-bottom: calc($section-gap * 2);
+        position: relative;
         .text{
             @include flex-col-between-center;
             text-align: center;
@@ -103,6 +142,36 @@ section{
                     color: $gray-text;
                 }
             }
+        }
+        // sfondi
+        >img, >.forma-strana{
+            position: absolute;
+            z-index: -1;
+            top: 1000px;
+        }
+        .sfondo-dx{
+            height: 500px;
+            left: -50px;
+            top: 0;
+            transform: rotate(240deg);
+            z-index: -2;
+        } 
+        .linea{
+            top: 0;
+            opacity: 0.25;
+            width: 100%;
+        } 
+        .forma-strana{
+            top: 50px;
+            right: 350px;
+            height: 500px;
+            @include rose-filter;
+            z-index: -2;
+        } 
+        .palla{
+            top: 50px;
+            right: -50px;
+            height: 150px;
         }
     }
     .quote{

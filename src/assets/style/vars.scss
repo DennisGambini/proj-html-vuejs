@@ -4,11 +4,15 @@
 // COLORI
 $primary-text: black;
 $gray-text: $dusty-gray;
+$rosa: #FEF7F3;
 @mixin ombra-light {
     box-shadow: 1px 1px 15px rgba($color: #000000, $alpha: 0.2), -1px -1px 15px rgba($color: #000000, $alpha: 0.2)
 }
 @mixin yellow-filter {
     filter: brightness(0) saturate(100%) invert(60%) sepia(40%) saturate(556%) hue-rotate(0deg) brightness(100%) contrast(92%);
+}
+@mixin rose-filter {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(2%) saturate(2449%) hue-rotate(315deg) brightness(107%) contrast(99%);
 }
 // fonts
 @mixin signature-text{
