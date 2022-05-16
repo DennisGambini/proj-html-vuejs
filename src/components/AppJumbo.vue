@@ -100,6 +100,7 @@ export default {
             width: 30%;
             .signature{
                 @include signature-text;
+                font-weight: 900;
             }
             a{
                 @include orange-md-btn;

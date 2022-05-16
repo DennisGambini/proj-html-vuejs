@@ -3,6 +3,7 @@
 
 // COLORI
 $primary-text: black;
+$gray-text: $dusty-gray;
 @mixin ombra-light {
     box-shadow: 1px 1px 15px rgba($color: #000000, $alpha: 0.2), -1px -1px 15px rgba($color: #000000, $alpha: 0.2)
 }
@@ -18,13 +19,24 @@ $primary-text: black;
     text-align: center;
 }
 
+// sizing
+$section-gap: 60px;
+
 
 // MIXINS
+
+// containers
+@mixin container-sm {
+    max-width: 60%;
+    margin: 0 auto;
+}
 @mixin container-md {
     max-width: 75%;
     margin: 0 auto;
 }
 
+
+// buttons
 @mixin btn {
     border: none;
     border-radius: 5px;
@@ -47,6 +59,8 @@ $primary-text: black;
     @include orange-sm-btn;
     padding: 10px 25px;
 }
+
+// positioning
 @mixin centered {
     position: absolute;
     top: 50%;

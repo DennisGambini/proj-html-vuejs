@@ -2,10 +2,12 @@
   <div id="app">
     <app-counterdown/>
     <app-header/>
+    <app-jumbo/>
 
     <main>
-      <app-jumbo/>
+      <first-section />
     </main>
+
   </div>
 </template>
 
@@ -13,6 +15,7 @@
 import AppCounterdown from './components/AppCounterdown.vue'
 import AppHeader from './components/AppHeader.vue'
 import AppJumbo from './components/AppJumbo.vue'
+import FirstSection from './components/FirstSection.vue'
 
 
 export default {
@@ -20,7 +23,8 @@ export default {
   components: {
     AppHeader,
     AppCounterdown,
-    AppJumbo
+    AppJumbo,
+    FirstSection
 
   }
 }
