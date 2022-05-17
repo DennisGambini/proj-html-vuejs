@@ -64,6 +64,10 @@ export default {
         one: require('./assets/images/artist-blog-01-480x356.jpg'),
         two: require('./assets/images/artist-blog-02-500x680.jpg'),
         three: require('./assets/images/artist-blog-03-480x356.jpeg'),
+    },
+    youtube: {
+        jumbo: require('./assets/images/artist-video-poster.jpg'),
+        logo: require('./assets/images/icon-youtube-play.png')
     }
     
 }
