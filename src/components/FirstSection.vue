@@ -3,10 +3,10 @@
 
       <div class="cards">
           <!-- sfondi -->
-        <img :src="sfondi[0].img" alt="sfondo image" class="sfondo sfondo-dx">
-        <img :src="sfondi[2].img" alt="sfondo linea" class="sfondo linea">
+        <img :src="appImgs.sfondi.fagiolo" alt="sfondo image" class="sfondo sfondo-dx">
+        <img :src="appImgs.sfondi.linea" alt="sfondo linea" class="sfondo linea">
         <forma-strana class="sfondo forma-strana"/>
-        <img :src="sfondi[1].img" alt="sfondo palla" class="sfondo palla">
+        <img :src="appImgs.sfondi.pallaOnde" alt="sfondo palla" class="sfondo palla">
 
 
           <div class="container">
@@ -18,10 +18,10 @@
                 </div>
 
                 <div class="row">
-                    <div class="card" v-for="(card, index) in cards" :key="index">
-                        <img :src="imgs[index].img" :alt="card.title + ' img'">
-                        <h4>{{card.title}}</h4>
-                        <p>{{card.description}}</p>
+                    <div class="card" v-for="(card, index) in appImgs.box" :key="index">
+                        <img :src="appImgs.box[index].img" :alt="appImgs.box[index].title + ' img'">
+                        <h4>{{appImgs.box[index].title}}</h4>
+                        <p>{{appImgs.box[index].description}}</p>
                     </div>
                 </div>
           </div>
@@ -32,7 +32,7 @@
       <div class="quote">
           <div class="container">
               <div class="sx">
-                  <img :src="quoteImg" alt="quote">
+                  <img :src="appImgs.sfondi.quote" alt="quote">
                   <h2>I coach and mentor visual artists, like you, to Create Like You Mean It</h2>
                   <div class="sign">Martin Garrix</div>
               </div>
@@ -58,6 +58,7 @@
 
 <script>
 import dati from '@/dati.json';
+import immagini from '@/immagini.js'
 import FormaStrana from './FormaStrana.vue';
 
 export default {
@@ -65,43 +66,7 @@ export default {
     name: 'FirstSection',
     data(){return{
         cards: dati.cards,
-        imgs:[
-            {
-                img: require('@/assets/images/artist-box-image-01.png')
-            },
-            {
-                img: require('@/assets/images/artist-box-image-02.png')
-            },
-            {
-                img: require('@/assets/images/artist-box-image-03.png')
-            },
-            {
-                img: require('@/assets/images/artist-box-image-04.png')
-            },
-        ],
-        sfondi:[
-            {
-                name: 'sfondoDx',
-                img: require('../assets/images/artist-shape-01.png')
-            },
-            {
-                name: 'palla',
-                img: require('../assets/images/maxcoach-shape-13.png')
-            },
-            {
-                name: 'linea',
-                img: require('../assets/images/maxcoach-shape-03.png')
-            },
-            {
-                name: 'shape blu',
-                img: require('../assets/images/maxcoach-shape-05.png')
-            },
-            {
-                name: 'shape scura',
-                img: require('../assets/images/maxcoach-shape-12.png')
-            },
-        ],
-        quoteImg: require('@/assets/images/artist-quote-icon.png')
+        appImgs: immagini
     }},
     methods:{
 
@@ -158,7 +123,7 @@ section{
         } 
         .linea{
             top: 0;
-            opacity: 0.25;
+            // opacity: 0.25;
             width: 100%;
         } 
         .forma-strana{

@@ -7,7 +7,7 @@
     <main>
       <first-section />
     </main>
-
+    
   </div>
 </template>
 
@@ -24,8 +24,7 @@ export default {
     AppHeader,
     AppCounterdown,
     AppJumbo,
-    FirstSection
-
+    FirstSection,
   }
 }
 </script>

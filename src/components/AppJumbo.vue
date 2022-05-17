@@ -2,11 +2,11 @@
     <div class="jumbo">
         <div class="sx">
             <forma-strana class="mia-forma" />
-            <img :src="sfondoSx" alt="immagine" class="sfondo-sx">
-            <img :src="testa" alt="testa image" class="testa">
-            <img :src="nebbia" alt="nebbia image" class="nebbia">
-            <img :src="scarabocchio" alt="scarabocchio image" class="scarab">
-            <img :src="scimmia" alt="scimmia image" class="scimmia">
+            <img :src="img.sfondi.semicerchio" alt="immagine" class="sfondo-sx">
+            <img :src="img.sfondi.testa" alt="testa image" class="testa">
+            <img :src="img.sfondi.nebbia" alt="nebbia image" class="nebbia">
+            <img :src="img.sfondi.schizzo" alt="scarabocchio image" class="scarab">
+            <img :src="img.sfondi.scimmia" alt="scimmia image" class="scimmia">
         </div>
 
         <div class="text">
@@ -16,32 +16,25 @@
         </div>
 
         <div class="dx">
-            <img :src="sfondoDx" alt="immagine" class="sfondo-dx">
+            <img :src="img.sfondi.fagiolo" alt="immagine" class="sfondo-dx">
             <forma-strana class="mia-forma"/>
-            <img :src="foglia" alt="foglia immagine" class="foglia">
-            <img :src="paint" alt="paint image" class="paint">
-            <img :src="rombo" alt="rombo image" class="rombo">
-            <img :src="faccia" alt="faccia image" class="faccia">
+            <img :src="img.sfondi.foglia" alt="foglia immagine" class="foglia">
+            <img :src="img.sfondi.paint" alt="paint image" class="paint">
+            <img :src="img.sfondi.pallaScura" alt="rombo image" class="rombo">
+            <img :src="img.sfondi.faccia" alt="faccia image" class="faccia">
         </div>
     </div>
 </template>
 
 <script>
 import FormaStrana from './FormaStrana.vue'
+import immagini from '../immagini.js'
+
 export default {
   components: { FormaStrana },
     name: 'AppJumbo',
     data(){return{
-        sfondoSx: require('../assets/images/artist-shape-02.png'),
-        sfondoDx: require('../assets/images/artist-shape-01.png'),
-        testa: require('../assets/images/artist-hero-image-03.png'),
-        scimmia: require('../assets/images/artist-hero-image-01.jpg'),
-        scarabocchio: require('../assets/images/artist-hero-image-02.jpg'),
-        foglia: require('../assets/images/artist-shape-04.png'),
-        nebbia: require('../assets/images/artist-shape-03.png'),
-        rombo: require('../assets/images/maxcoach-shape-12.png'),
-        paint: require('../assets/images/artist-shape-05.png'),
-        faccia: require('../assets/images/artist-hero-image-04.jpg')
+        img: immagini
     }}
 }
 </script>
