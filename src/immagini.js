@@ -54,12 +54,40 @@ export default {
         three: require('./assets/images/artist-event-03-250x300.jpg'),
         four: require('./assets/images/artist-event-04-250x300.jpg'),
     },
-    avatar: {
-        one: require('./assets/images/artist-testimonial-avatar-01.jpg'),
-        two: require('./assets/images/artist-testimonial-avatar-02.jpg'),
-        three: require('./assets/images/artist-testimonial-avatar-03.jpg'),
-        four: require('./assets/images/artist-testimonial-avatar-04.jpg'),
-    },
+    avatar: [
+        {
+            img: require('./assets/images/artist-testimonial-avatar-02.jpg'),
+            name: 'Florence Themes',
+            job: 'Multimedia Admin',
+            title: "It's a choice of quality for people with special needs",
+            description: "I'm a very strict person so I require everything to be organized and neat. Then I'll be able to make things right and shine. MaxCoach guys just got me."
+        },
+        {
+            img: require('./assets/images/artist-testimonial-avatar-04.jpg'),
+            name: 'Mina Hollace',
+            job: 'Freelancer',
+            title: 'High level of efficiency and scientific teaching methods',
+            description: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.'
+        },
+        {
+            img: require('./assets/images/artist-testimonial-avatar-01.jpg'),
+            name: 'Madley Pondor',
+            job: 'IT Specialist',
+            title: 'Professional team of specialists and passionate mentors at reach',
+            description: 'I need to get a certification for English proficiency and MaxCoach is my best choice. Theri tutprs are smart and professional when dealing with students.'
+        },
+        {
+            img: require('./assets/images/artist-testimonial-avatar-03.jpg'),
+            name: 'Dennis Gambini',
+            job: 'Web Developer',
+            title: 'Best ever',
+            description: 'Bla bla bla....'
+        }
+        // one: 
+        // two: require('./assets/images/artist-testimonial-avatar-02.jpg'),
+        // three: require('./assets/images/artist-testimonial-avatar-03.jpg'),
+        // four: require('./assets/images/artist-testimonial-avatar-04.jpg'),
+    ],
     blog: {
         one: require('./assets/images/artist-blog-01-480x356.jpg'),
         two: require('./assets/images/artist-blog-02-500x680.jpg'),

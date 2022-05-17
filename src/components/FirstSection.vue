@@ -31,7 +31,10 @@
 
         <!-- carosello -->
         <div class="carousel">
+            <section-title 
+            :signature="'Testimonials'" :text="'Why do people love me?'"/>
 
+            <app-carousel :myArray="appImgs.avatar"/>
         </div>
 
     </section>
@@ -44,9 +47,11 @@ import FormaStrana from './FormaStrana.vue';
 import FirstCards from './FirstCards.vue';
 import FirstSectionQuote from './FirstSectionQuote.vue';
 import YoutubeEmbed from './YoutubeEmbed.vue';
+import SectionTitle from './SectionTitle.vue';
+import AppCarousel from './AppCarousel.vue';
 
 export default {
-  components: { FormaStrana, FirstCards, FirstSectionQuote, YoutubeEmbed },
+  components: { FormaStrana, FirstCards, FirstSectionQuote, YoutubeEmbed, SectionTitle, AppCarousel },
     name: 'FirstSection',
     data(){return{
         cards: dati.cards,
