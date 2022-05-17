@@ -57,7 +57,6 @@ export default {
 @import '../assets/style/vars.scss';
 
 .carousel{
-    // background: green;
     padding: $section-gap 0;
 }
 .carousel-row{
@@ -74,6 +73,7 @@ export default {
         gap: 35px;
         padding: 20px;
         background-color: $white;
+        border-radius: 10px;
         .title{
             font-weight: 600;
         }
@@ -94,7 +94,7 @@ export default {
         opacity: 1;
     }
     .non-active{
-        opacity: 0.3;
+        opacity: 0.5;
     }
 }
 

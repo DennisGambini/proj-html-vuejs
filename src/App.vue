@@ -6,6 +6,7 @@
 
     <main>
       <first-section />
+      <section-courses />
     </main>
     
   </div>
@@ -16,6 +17,7 @@ import AppCounterdown from './components/AppCounterdown.vue'
 import AppHeader from './components/AppHeader.vue'
 import AppJumbo from './components/AppJumbo.vue'
 import FirstSection from './components/FirstSection.vue'
+import SectionCourses from './components/SectionCourses.vue'
 
 
 export default {
@@ -25,6 +27,7 @@ export default {
     AppCounterdown,
     AppJumbo,
     FirstSection,
+    SectionCourses,
   }
 }
 </script>

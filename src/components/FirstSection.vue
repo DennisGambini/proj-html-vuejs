@@ -27,15 +27,16 @@
             <div class="container">
                 <youtube-embed/>
             </div>
+            <img :src="appImgs.sfondi.wave" alt="wave" class="wave">
         </div>
 
         <!-- carosello -->
         <div class="carousel">
-            <section-title 
-            :signature="'Testimonials'" :text="'Why do people love me?'"/>
+            <section-title :signature="'Testimonials'" :text="'Why do people love me?'"/>
 
             <app-carousel :myArray="appImgs.avatar"/>
         </div>
+
 
     </section>
 </template>
@@ -100,6 +101,20 @@ section{
             right: -50px;
             height: 150px;
         }
+    }
+    .embed{
+        position: relative;
+        .wave{
+            @include rose-filter;
+            position: absolute;
+            bottom: 0;
+            z-index: -10;
+            width: 100%;
+            height: 60%;
+        }
+    }
+    .carousel{
+        background-color: $hint-of-red;
     }
 }
 </style>

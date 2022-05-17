@@ -38,16 +38,88 @@ export default {
             description: "Punctuality is our top priority beacause it's an essential criteria to assess a program quality."
         },
     },
-    corsi: {
-        one: require('./assets/images/artist-course-01-480x480.jpg'),
-        two: require('./assets/images/artist-course-02-480x480.jpg'),
-        three: require('./assets/images/artist-course-03-480x480.jpg'),
-        four: require('./assets/images/artist-course-04-480x480.jpg'),
-        five: require('./assets/images/artist-course-05-480x480.jpg'),
-        six: require('./assets/images/artist-course-06-480x480.jpg'),
-        seven: require('./assets/images/artist-course-07-480x480.jpg'),
-        eight: require('./assets/images/artist-course-08-480x480.jpg'),
-    },
+    corsi: [
+        {
+            title: 'The Acrylic Painting Academy',
+            img: require('./assets/images/artist-course-08-480x480.jpg'),
+            price: 18.00,
+            description: {
+                duration: 4,
+                students: 50
+            }
+        },
+        {
+            title: 'Drawing and Shading',
+            img: require('./assets/images/artist-course-07-480x480.jpg'),
+            price: 21.00,
+            description: {
+                duration: 14,
+                students: 50
+            }
+        },
+        {
+            title: 'The Color Theory for Digital Artist',
+            img: require('./assets/images/artist-course-06-480x480.jpg'),
+            price: 19.00,
+            description: {
+                duration: 7,
+                students: 50
+            }
+        },
+        {
+            title: 'Ultimate Guide to Digital Sketching for Beginner',
+            img: require('./assets/images/artist-course-05-480x480.jpg'),
+            price: 35.00,
+            description: {
+                duration: 14,
+                students: 50
+            }
+        },
+        {
+            title: 'Portrait Drawing The Smart Way',
+            img: require('./assets/images/artist-course-04-480x480.jpg'),
+            price: 19.00,
+            description: {
+                duration: 2,
+                students: 50
+            }
+        },
+        {
+            title: 'Mastering Watercolor Painting from Beginner',
+            img: require('./assets/images/artist-course-03-480x480.jpg'),
+            price: 19.00,
+            description: {
+                duration: 9,
+                students: 50
+            }
+        },
+        {
+            title: 'The Art & Science of Drawing',
+            img: require('./assets/images/artist-course-02-480x480.jpg'),
+            price: 25.00,
+            description: {
+                duration: 4,
+                students: 50
+            }
+        },
+        {
+            title: 'The Colored Pencil Drawing Course',
+            img: require('./assets/images/artist-course-01-480x480.jpg'),
+            price: 22.00,
+            description: {
+                duration: 6,
+                students: 50
+            }
+        }
+        // one: require('./assets/images/artist-course-01-480x480.jpg'),
+        // two: require('./assets/images/artist-course-02-480x480.jpg'),
+        // three: require('./assets/images/artist-course-03-480x480.jpg'),
+        // four: require('./assets/images/artist-course-04-480x480.jpg'),
+        // five: require('./assets/images/artist-course-05-480x480.jpg'),
+        // six: require('./assets/images/artist-course-06-480x480.jpg'),
+        // seven: require('./assets/images/artist-course-07-480x480.jpg'),
+        // eight: require('./assets/images/artist-course-08-480x480.jpg'),
+    ],
     eventi: {
         one: require('./assets/images/artist-event-01-250x300.jpg'),
         two: require('./assets/images/artist-event-02-250x300.jpg'),
