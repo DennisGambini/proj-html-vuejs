@@ -8,7 +8,8 @@
           <i class="fa-solid fa-arrow-right-long"></i>
         </a>
 
-        <div class="scritta">courses</div>
+        <!-- <div class="scritta">courses</div> -->
+        <scritta-sfondo :scritta="'courses'" class="scritta"/>
     </section>
 </template>
 
@@ -16,11 +17,13 @@
 import SectionTitle from './SectionTitle.vue'
 import dati from '../immagini'
 import CoursesCards from './CoursesCards.vue'
+import ScrittaSfondo from './ScrittaSfondo.vue'
 
 export default {
     components: { 
         SectionTitle,
         CoursesCards,
+        ScrittaSfondo,
     },
     name: 'SectionCourses',
     data(){return{
@@ -43,28 +46,10 @@ section{
         }
     }
     .scritta{
-            text-transform: uppercase;
-            font-size: 100px;
-            color: white;
-            position: absolute;
-            right: -10%;
-            top: 50%;
-            opacity: 0.3;
-            z-index: -1;
-            transform: translateY(-50%) rotate(90deg);
-            text-shadow: 1px 1px  rgba($color: $matrix, $alpha: 0.15),
-            1px -1px rgba($matrix, 0.15),
-            -1px 1px rgba($matrix, 0.15),
-            -1px -1px rgba($matrix, 0.15),
-            2px 2px rgba($matrix, 0.15),
-            2px -2px rgba($matrix, 0.15),
-            -2px 2px rgba($matrix, 0.15),
-            -2px -2px rgba($matrix, 0.15),
-            3px 3px rgba($matrix, 0.15),
-            3px -3px rgba($matrix, 0.15),
-            -3px 3px rgba($matrix, 0.15),
-            -3px -3px rgba($matrix, 0.15),
-        }
+        position: absolute;
+        right: -15%;
+        top: 50%;
+    }
 }
 
 </style>

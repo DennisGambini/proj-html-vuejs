@@ -8,6 +8,7 @@
       <first-section />
       <section-courses />
       <section-blog />
+      <section-events />
     </main>
     
   </div>
@@ -20,6 +21,7 @@ import AppJumbo from './components/AppJumbo.vue'
 import FirstSection from './components/FirstSection.vue'
 import SectionBlog from './components/SectionBlog.vue'
 import SectionCourses from './components/SectionCourses.vue'
+import SectionEvents from './components/SectionEvents.vue'
 
 
 export default {
@@ -31,6 +33,7 @@ export default {
     FirstSection,
     SectionCourses,
     SectionBlog,
+    SectionEvents,
   }
 }
 </script>

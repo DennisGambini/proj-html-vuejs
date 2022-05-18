@@ -148,11 +148,6 @@ export default {
             description: 'Bla bla bla....'
         }
     ],
-    // blog: {
-    //     one: require('./assets/images/artist-blog-01-480x356.jpg'),
-    //     two: require('./assets/images/artist-blog-02-500x680.jpg'),
-    //     three: require('./assets/images/artist-blog-03-480x356.jpeg'),
-    // },
     youtube: {
         jumbo: require('./assets/images/artist-video-poster.jpg'),
         logo: require('./assets/images/icon-youtube-play.png')
@@ -185,6 +180,32 @@ export default {
                 views: '1,379'
             }
         },
+    ],
+    events:[
+        {
+            title: 'Storytelling Workshop',
+            img: require('./assets/images/artist-event-01-250x300.jpg'),
+            date: 'apr 22, 2021',
+            place: 'Texas, US'
+        },
+        {
+            title: 'Painting Art Contest 2020',
+            img: require('./assets/images/artist-event-02-250x300.jpg'),
+            date: 'oct 10, 2020',
+            place: 'New York, US'
+        },
+        {
+            title: 'International Art Fair 2020',
+            img: require('./assets/images/artist-event-03-250x300.jpg'),
+            date: 'nov 23, 2020',
+            place: 'Hamburg, Germany'
+        },
+        {
+            title: 'Street Performance: Call for Artist',
+            img: require('./assets/images/artist-event-04-250x300.jpg'),
+            date: 'dec 15, 2020',
+            place: 'Illinois, US'
+        }
     ]
     
 }
