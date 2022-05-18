@@ -25,7 +25,7 @@ $rosa: #FEF7F3;
 $sm-text:10px;
 $md-text: 14px;
 $lg-text: 20px;
-
+$xl-text: 30px;
 // sizing
 $section-gap: 60px;
 
@@ -39,6 +39,10 @@ $section-gap: 60px;
 }
 @mixin container-md {
     max-width: 75%;
+    margin: 0 auto;
+}
+@mixin container-lg {
+    max-width: 92.5%;
     margin: 0 auto;
 }
 

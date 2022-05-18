@@ -11,6 +11,7 @@
       <section-events />
     </main>
     
+    <app-footer/>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import FirstSection from './components/FirstSection.vue'
 import SectionBlog from './components/SectionBlog.vue'
 import SectionCourses from './components/SectionCourses.vue'
 import SectionEvents from './components/SectionEvents.vue'
+import AppFooter from './components/AppFooter.vue'
 
 
 export default {
@@ -34,6 +36,7 @@ export default {
     SectionCourses,
     SectionBlog,
     SectionEvents,
+    AppFooter
   }
 }
 </script>

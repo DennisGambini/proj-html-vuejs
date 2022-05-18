@@ -206,7 +206,14 @@ export default {
             date: 'dec 15, 2020',
             place: 'Illinois, US'
         }
-    ]
+    ],
+    footer:{
+        sfondi:{
+            sfondoSx: require('./assets/images/artist-shape-color-paint-top-left.png'),
+            sfondoDx: require('./assets/images/artist-shape-color-paint-bottom-right.png')
+        }
+        
+    }
     
 }
 
