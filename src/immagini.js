@@ -211,7 +211,56 @@ export default {
         sfondi:{
             sfondoSx: require('./assets/images/artist-shape-color-paint-top-left.png'),
             sfondoDx: require('./assets/images/artist-shape-color-paint-bottom-right.png')
-        }
+        },
+        links:[
+            {
+                title: 'address',
+                page: false,
+                link:[
+                    '382 NE 191st St # 87394 Miami, FL 33179-3899',
+                    '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
+                    'support@maxcoach.com'
+                ],
+                img: false,
+                icons: ['fa-facebook', 'fa-twitter', 'fa-instagram', 'fa-linkedin']
+            },
+            {
+                title: 'explore',
+                page: false,
+                link:[
+                    'Start here',
+                    'Success story',
+                    'Blog',
+                    'Courses',
+                    'Contact us'
+                ],
+                img: false,
+                icons: false
+            },
+            {
+                title: 'information',
+                page: false,
+                link:[
+                    'Membership',
+                    'Purchase guide',
+                    'Privacy policy',
+                    'Terms of services'
+                ],
+                img: false,
+                icons: false
+            },
+            {
+                title: 'instagram',
+                page: '@maxcoach',
+                link: false,
+                img:[
+                    require('./assets/images/120084500_197897808368764_8114555493043279565_n.jpg'),
+                    require('./assets/images/120012142_177596140500760_8623485824101406058_n.jpg'),
+                    require('./assets/images/120099363_364334431619755_7198812647386067017_n.jpg')
+                ],
+                icons: false
+            },
+        ]
         
     }
     
