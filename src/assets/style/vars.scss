@@ -14,6 +14,9 @@ $rosa: #FEF7F3;
 @mixin rose-filter {
     filter: brightness(0) saturate(100%) invert(94%) sepia(2%) saturate(2449%) hue-rotate(315deg) brightness(107%) contrast(99%);
 }
+@mixin light-blue-filter {
+    filter: brightness(0) saturate(100%) invert(91%) sepia(7%) saturate(307%) hue-rotate(157deg) brightness(105%) contrast(98%) !important;
+}
 // fonts
 @mixin signature-text{
     font-family: 'Shadows Into Light', cursive;

@@ -104,6 +104,10 @@ export default {
                                 width: 100%;
                                 object-fit: cover;
                                 object-position: center;
+                                transition: all 0.5s;
+                                &:hover{
+                                    filter: grayscale(100%);
+                                }
                             }
                         }
                     }

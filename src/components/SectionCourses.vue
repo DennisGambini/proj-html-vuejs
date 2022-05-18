@@ -8,8 +8,9 @@
           <i class="fa-solid fa-arrow-right-long"></i>
         </a>
 
-        <!-- <div class="scritta">courses</div> -->
         <scritta-sfondo :scritta="'courses'" class="scritta"/>
+
+        <img :src="myArray.sfondi.fagiolo" alt="sfondo artista" class="fagiolo">
     </section>
 </template>
 
@@ -49,6 +50,15 @@ section{
         position: absolute;
         right: -15%;
         top: 50%;
+    }
+    .fagiolo{
+        z-index: -1;
+        position: absolute;
+        left: -10%;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+        filter: opacity(0.7) drop-shadow(0 0 0 blue);
     }
 }
 

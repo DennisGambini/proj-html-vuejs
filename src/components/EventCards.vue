@@ -39,11 +39,17 @@ export default {
         flex-basis: calc((100% / 2) - 25px);
         .img{
             height: 300px;
+            width: 250px;
+            position: relative;
+            overflow: hidden;
             img{
                 height: 100%;
                 width: 100%;
+                @include centered;
+                position: absolute;
                 object-fit: cover;
                 object-position: center;
+                transition: all 1.2s ease-out;
             }
         }
         .event-text{
@@ -60,6 +66,10 @@ export default {
             .title{
                 font-size: $md-text;
                 font-weight: 600;
+                &:hover{
+                    cursor: pointer;
+                    color: $thunderbird;
+                }
             }
             .description{
                 font-size: $sm-text;
@@ -73,6 +83,14 @@ export default {
             flex-direction: row-reverse;
             .event-text{
                 align-items: flex-end;
+            }
+        }
+        &:hover{
+            .img{
+                img{
+                    height: 120%;
+                    width: 120%;
+                }
             }
         }
     }

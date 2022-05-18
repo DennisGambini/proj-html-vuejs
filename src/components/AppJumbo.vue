@@ -35,7 +35,31 @@ export default {
     name: 'AppJumbo',
     data(){return{
         img: immagini
-    }}
+    }},
+    mounted(){
+        const faccia = document.querySelector('.faccia');
+        const scimmia = document.querySelector('.scimmia');
+        const schizzo = document.querySelector('.scarab');
+        const jumbotron = document.querySelector('.jumbo')
+
+        const faceMove = (e) => {
+            faccia.style.right = (e.pageX / 8) + 'px';
+            faccia.style.bottom = (e.pageY / 8) + 'px';
+        }
+        const scimmiaMove = (e) => {
+            scimmia.style.left = -(e.pageX / 20) +150 + 'px';
+            scimmia.style.bottom = (e.pageY / 8) + 'px';
+        }
+        const schizzoMove = (e) => {
+            schizzo.style.left = (e.pageX / 8) + 'px';
+            schizzo.style.top = (e.pageY / 8) +100 + 'px';
+        }
+
+        jumbotron.addEventListener('mousemove', faceMove);
+        jumbotron.addEventListener('mousemove', scimmiaMove)
+        jumbotron.addEventListener('mousemove', schizzoMove)
+
+    }
 }
 </script>
 

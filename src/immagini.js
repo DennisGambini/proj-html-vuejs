@@ -183,16 +183,10 @@ export default {
     ],
     events:[
         {
-            title: 'Storytelling Workshop',
-            img: require('./assets/images/artist-event-01-250x300.jpg'),
-            date: 'apr 22, 2021',
-            place: 'Texas, US'
-        },
-        {
-            title: 'Painting Art Contest 2020',
-            img: require('./assets/images/artist-event-02-250x300.jpg'),
-            date: 'oct 10, 2020',
-            place: 'New York, US'
+            title: 'Street Performance: Call for Artist',
+            img: require('./assets/images/artist-event-04-250x300.jpg'),
+            date: 'dec 15, 2020',
+            place: 'Illinois, US'
         },
         {
             title: 'International Art Fair 2020',
@@ -201,10 +195,16 @@ export default {
             place: 'Hamburg, Germany'
         },
         {
-            title: 'Street Performance: Call for Artist',
-            img: require('./assets/images/artist-event-04-250x300.jpg'),
-            date: 'dec 15, 2020',
-            place: 'Illinois, US'
+            title: 'Painting Art Contest 2020',
+            img: require('./assets/images/artist-event-02-250x300.jpg'),
+            date: 'oct 10, 2020',
+            place: 'New York, US'
+        },
+        {
+            title: 'Storytelling Workshop',
+            img: require('./assets/images/artist-event-01-250x300.jpg'),
+            date: 'apr 22, 2021',
+            place: 'Texas, US'
         }
     ],
     footer:{

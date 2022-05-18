@@ -1,6 +1,8 @@
 <template>
     <div class="box">
-        <img :src="imgs.youtube.jumbo" alt="youtube video" class="jumbo">
+        <div class="jumbo-box">
+            <img :src="imgs.youtube.jumbo" alt="youtube video" class="jumbo">
+        </div>
         <forma-strana class="mia-forma sfondo" />
         <img :src="imgs.sfondi.pallaBlu" alt="sfondo" class="sfondo palla-blu">
         <img :src="imgs.sfondi.pallaScura" alt="sfondo" class="sfondo palla-scura">
@@ -29,8 +31,27 @@ export default {
         margin-top: 230px;
         padding: 10vh 10vh;
         position: relative;
-        .jumbo{
+        
+        .jumbo-box{
+            margin: 0 auto;
+            overflow: hidden;
+            height: 400px;
             width: 100%;
+            position: relative;
+            .jumbo{
+                @include centered;
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+                transition: all 1.5s ease-out;
+            }
+        }
+        &:hover{
+            .jumbo{
+                height: 120%;
+                width: 120%;
+            }
         }
 
         .sfondo{
