@@ -23,7 +23,12 @@ export default {
         width: 30%;
         .signature{
             @include signature-text;
-            font-weight: 900;
+            font-weight: 600;
+            font-size: $huge-text;
+        }
+        h2{
+            font-size: $xl-text;
+            font-weight: 700;
         }
 }
 

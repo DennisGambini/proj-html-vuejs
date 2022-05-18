@@ -1,11 +1,12 @@
 <template>
     <div>
-        <div class="text">
+        
+        <!-- <div class="text">
             <div class="signature">Artist coaching</div>
             <h2>I understand what it taked to create. <br>
                     I can help you with
             </h2>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="card" v-for="(card, index) in appImgs.box" :key="index">
@@ -18,6 +19,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'FirstCards',
     props:['appImgs']

@@ -29,6 +29,7 @@ $sm-text:10px;
 $md-text: 14px;
 $lg-text: 20px;
 $xl-text: 30px;
+$huge-text: 50px;
 // sizing
 $section-gap: 60px;
 
@@ -37,7 +38,7 @@ $section-gap: 60px;
 
 // containers
 @mixin container-sm {
-    max-width: 60%;
+    max-width: 70%;
     margin: 0 auto;
 }
 @mixin container-md {
@@ -63,16 +64,24 @@ $section-gap: 60px;
 @mixin orange-sm-btn {
     @include btn;
     padding: 5px 18px;
-    background-color: $tulip-tree;
-    color: $thunderbird;
+    color: $white;
+    background-color: rgba($color: $thunderbird, $alpha: 0.6);
     &:hover{
-        background-color: $thunderbird;
-        color: $white;
+        background-color: $cerulean;
     }
 }
 @mixin orange-md-btn{
     @include orange-sm-btn;
     padding: 10px 25px;
+}
+@mixin light-btn{
+    @include orange-sm-btn;
+    background-color: rgba($color: $tulip-tree, $alpha: 0.5);
+    color: $thunderbird;
+    &:hover{
+        background-color: $thunderbird;
+        color: $white;
+    }
 }
 @mixin transparent-btn{
     @include btn;

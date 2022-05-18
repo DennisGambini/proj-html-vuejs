@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <app-counterdown/>
-    <app-header/>
-    <app-jumbo/>
 
-    <main>
-      <first-section />
-      <section-courses />
-      <section-blog />
-      <section-events />
-    </main>
-    
-    <app-footer/>
+      <div class="maxi-container">
+      <app-counterdown class="counter-clock"/>
+
+        <app-header class="header"/>
+        <app-jumbo/>
+
+        <main>
+          <first-section />
+          <section-courses />
+          <section-blog />
+          <section-events />
+        </main>
+        
+        <app-footer/>
+
+      </div>
   </div>
 </template>
 
@@ -37,6 +42,30 @@ export default {
     SectionBlog,
     SectionEvents,
     AppFooter
+  },
+  data(){
+    return{
+
+    }
+  },
+  mounted(){
+    const header = document.querySelector('.header');
+    const content = document.querySelector('.maxi-container');
+    let limite = header.offsetTop;
+
+    function myScroll(){
+      if(window.scrollY > limite){
+        header.classList.add('fixed')
+        content.classList.add('padding')
+      } else {
+        header.classList.remove('fixed')
+        content.classList.remove('padding')
+      }
+    }
+
+    window.onscroll = function(){
+      myScroll()
+    }
   }
 }
 </script>
@@ -45,6 +74,20 @@ export default {
 @import './assets/style/general.scss';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  .maxi-container{
+    position: relative;
+  }
+  .header{
+    width: 100%;
+  }
+  .fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .padding{
+    padding-top: 70px;
+  }
   
 }
 </style>

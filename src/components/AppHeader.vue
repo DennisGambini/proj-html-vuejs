@@ -37,13 +37,31 @@ export default {
 @import '../assets/style/vars.scss';
 
 header{
+    height: 70px;
+    z-index: 1000;
+    background: $white;
+    box-shadow: 0px 3px 10px rgba($color: #000000, $alpha: 0.2);
     .container{
+        height: 100%;
         @include flex-row-between-center;
-        @include container-md;
+        @include container-lg;
         .logo{
             height: 20px;
             img{
                 height: 100%;
+            }
+        }
+        .icons{
+            @include flex-row-between-center;
+            gap: 20px;
+            i{
+                font-size: $lg-text;
+                color: $gray-text;
+                cursor: pointer;
+                transition: 0.4s;
+                &:hover{
+                    color: $thunderbird;
+                }
             }
         }
     }

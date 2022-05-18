@@ -41,7 +41,7 @@ section{
     text-align: center;
     position: relative;
     a{
-        @include orange-md-btn;
+        @include light-btn;
         i{
             vertical-align: middle;
         }

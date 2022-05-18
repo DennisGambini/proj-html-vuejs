@@ -8,7 +8,7 @@
             <forma-strana class="sfondo forma-strana"/>
             <img :src="appImgs.sfondi.pallaOnde" alt="sfondo palla" class="sfondo palla">
 
-
+            <section-title :signature="'Artist coaching'" :text="'I understand what it taked to create. I can help you with'"/>
             <div class="container">
                 <first-cards :appImgs="appImgs"/>
             </div>

@@ -40,7 +40,6 @@ export default {
         const faccia = document.querySelector('.faccia');
         const scimmia = document.querySelector('.scimmia');
         const schizzo = document.querySelector('.scarab');
-        const jumbotron = document.querySelector('.jumbo')
 
         const faceMove = (e) => {
             faccia.style.right = (e.pageX / 8) + 'px';
@@ -55,9 +54,9 @@ export default {
             schizzo.style.top = (e.pageY / 8) +100 + 'px';
         }
 
-        jumbotron.addEventListener('mousemove', faceMove);
-        jumbotron.addEventListener('mousemove', scimmiaMove)
-        jumbotron.addEventListener('mousemove', schizzoMove)
+        document.addEventListener('mousemove', faceMove);
+        document.addEventListener('mousemove', scimmiaMove)
+        document.addEventListener('mousemove', schizzoMove)
 
     }
 }
@@ -113,13 +112,20 @@ export default {
         }
         .text{
             @include flex-col-between-center;
+            // gap: 20px;
             @include centered;
             width: 30%;
             .signature{
                 @include signature-text;
                 font-weight: 900;
+                font-size: $huge-text;
+            }
+            h2{
+                font-size: $xl-text;
             }
             a{
+                margin-top: 40px;
+                display: block;
                 @include orange-md-btn;
             }
         }
