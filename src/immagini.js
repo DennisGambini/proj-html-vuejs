@@ -111,14 +111,6 @@ export default {
                 students: 50
             }
         }
-        // one: require('./assets/images/artist-course-01-480x480.jpg'),
-        // two: require('./assets/images/artist-course-02-480x480.jpg'),
-        // three: require('./assets/images/artist-course-03-480x480.jpg'),
-        // four: require('./assets/images/artist-course-04-480x480.jpg'),
-        // five: require('./assets/images/artist-course-05-480x480.jpg'),
-        // six: require('./assets/images/artist-course-06-480x480.jpg'),
-        // seven: require('./assets/images/artist-course-07-480x480.jpg'),
-        // eight: require('./assets/images/artist-course-08-480x480.jpg'),
     ],
     eventi: {
         one: require('./assets/images/artist-event-01-250x300.jpg'),
@@ -155,20 +147,45 @@ export default {
             title: 'Best ever',
             description: 'Bla bla bla....'
         }
-        // one: 
-        // two: require('./assets/images/artist-testimonial-avatar-02.jpg'),
-        // three: require('./assets/images/artist-testimonial-avatar-03.jpg'),
-        // four: require('./assets/images/artist-testimonial-avatar-04.jpg'),
     ],
-    blog: {
-        one: require('./assets/images/artist-blog-01-480x356.jpg'),
-        two: require('./assets/images/artist-blog-02-500x680.jpg'),
-        three: require('./assets/images/artist-blog-03-480x356.jpeg'),
-    },
+    // blog: {
+    //     one: require('./assets/images/artist-blog-01-480x356.jpg'),
+    //     two: require('./assets/images/artist-blog-02-500x680.jpg'),
+    //     three: require('./assets/images/artist-blog-03-480x356.jpeg'),
+    // },
     youtube: {
         jumbo: require('./assets/images/artist-video-poster.jpg'),
         logo: require('./assets/images/icon-youtube-play.png')
-    }
+    },
+    blog: [
+        {
+            title: 'Pocket-Sized Notebooks Hold Miniature Paintings',
+            img: require('./assets/images/artist-blog-03-480x356.jpeg'),
+            artist: 'Artist',
+            description: {
+                duration: 'May 15, 2020',
+                views: '1,253'
+            }
+        },
+        {
+            title: 'Connection Between Self-Portraits and Identity',
+            img: require('./assets/images/artist-blog-02-500x680.jpg'),
+            artist: 'Artist',
+            description: {
+                duration: 'May 15, 2020',
+                views: '1,344'
+            }
+        },
+        {
+            title: 'Brush Strokes Energize Trees in Paintings',
+            img: require('./assets/images/artist-blog-01-480x356.jpg'),
+            artist: 'Artist',
+            description: {
+                duration: 'May 15, 2020',
+                views: '1,379'
+            }
+        },
+    ]
     
 }
 

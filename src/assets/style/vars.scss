@@ -51,6 +51,7 @@ $section-gap: 60px;
     text-decoration: none;  
     font-size: 12px;
     font-weight: 600;
+    transition: all 0.5s;
 }
 @mixin orange-sm-btn {
     @include btn;
@@ -65,6 +66,29 @@ $section-gap: 60px;
 @mixin orange-md-btn{
     @include orange-sm-btn;
     padding: 10px 25px;
+}
+@mixin transparent-btn{
+    @include btn;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: $gray-text;
+    .icon{
+        padding: 5px 0;
+        vertical-align: middle;
+        margin-left: 10px;
+        color: $thunderbird;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+    }
+    &:hover{
+        .gray-border{
+            left: -120%;
+        }
+        .orange-border{
+            left: 0;
+        }
+    }
 }
 
 // positioning
